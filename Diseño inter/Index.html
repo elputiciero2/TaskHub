@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskHub | Gestión de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header>
+            <h1>TaskHub</h1>
+        </header>
+        
+<section id="contenedor-filtros" class="panel-glass seccion-filtros">
+
+            </section>
+
+
+
+        <section class="panel-glass seccion-formulario">
+
+            <h2>Nueva Tarea</h2>
+
+            <form id="formulario-tarea">
+
+                <input type="text" id="input-titulo" placeholder="¿Qué hay que hacer?" required>
+
+                <input type="text" id="input-responsable" placeholder="Responsable (Ej: Ana)" required>
+
+                <input type="date" id="input-fecha" required>
+
+                <button type="submit" class="btn-primario">+ Agregar Tarea</button>
+
+            </form>
+
+        </section>
+
+        <!--------------------------------------------------------------->
+        <section id="contenedor-filtros" class="panel-glass seccion-filtros" style="display: flex; gap: 15px; flex-wrap: wrap;">
+    <input type="text" id="input-busqueda" placeholder="🔍 Buscar por nombre o responsable..." style="flex: 2;">
+    <select id="select-estado" style="flex: 1; padding: 14px 20px; border-radius: 10px; background: rgba(0, 0, 0, 0.2); color: white; border: 1px solid var(--glass-border); outline: none;">
+        <option value="" style="color: black;">Todos los estados</option>
+        <option value="pendiente" style="color: black;">Pendientes</option>
+        <option value="en-progreso" style="color: black;">En Progreso</option>
+        <option value="completada" style="color: black;">Completadas</option>
+    </select>
+</section>
+        <!--------------------------------------------------------------->
+</section>
+        <section class="seccion-lista">
+            <div id="contenedor-tareas" class="grid-tareas">
+                </div>
+        </section>
+    </div>
+
+    <div id="modal-editar" class="modal oculto">
+        <div class="modal-contenido">
+            <h2 style="color: white; margin-bottom: 20px;">Editar Tarea</h2>
+            <form id="formulario-editar" style="flex-direction: column; display: flex; gap: 15px;">
+                <input type="hidden" id="edit-id">
+                <input type="text" id="edit-titulo" required>
+                <input type="text" id="edit-responsable" required>
+                <input type="date" id="edit-fecha" required>
+                <div class="modal-botones">
+                    <button type="submit" class="btn-primario" style="flex: 2;">Guardar Cambios</button>
+                    <button type="button" id="btn-cerrar-modal" class="btn-secundario" style="flex: 1;">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cargar lógica de datos primero (tasks.js) -->
+    <script src="tasks.js"></script>
+    
+    <!-- Cargar manipulación de DOM después (ui.js) -->
+    <script src="ui.js"></script>
+</body>
+</html>
