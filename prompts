@@ -1,0 +1,42 @@
+TaskHub:   
+1.Herramienta utilizada
+Herramienta: ChatGPT / Asistente IA (consultas puntuales vía chat)
+Modalidad de uso: Preguntas directas sobre conceptos o sintaxis específica de JavaScript y CSS.
+Las respuestas obtenidas fueron leídas, comprendidas e implementadas manualmente por el equipo.
+
+
+
+2. Prompts utilizados
+A continuación se listan las consultas realizadas durante el desarrollo:
+
+#
+Prompt utilizado
+Propósito
+1
+¿Cómo guardo datos en localStorage con JavaScript?
+Entender la persistencia de datos en el navegador
+2
+¿Cómo filtrar un array de objetos en JavaScript según una propiedad?
+Implementar la función de filtrado de tareas por estado
+3
+¿Cómo puedo buscar texto dentro de objetos de un array en JS?
+Búsqueda de tareas por nombre o responsable
+4
+¿Cómo abrir y cerrar un modal en HTML con JavaScript puro?
+Funcionamiento del modal de edición de tareas
+5
+¿Qué hace el operador spread (...) en JavaScript?
+Entender cómo actualizar objetos sin mutar el original
+6
+¿Cómo usar flexbox para alinear elementos en CSS?
+Diseño del formulario y las tarjetas de tareas
+7
+¿Cómo crear elementos HTML dinámicamente con createElement?
+Renderizar las tarjetas de tareas en el DOM
+
+
+
+
+3. Aclaración sobre el alcance del uso
+Las consultas listadas fueron de carácter informativo y puntual. En ningún caso se solicitó a la IA que escribiera bloques completos de código, diseñara la arquitectura del proyecto o tomara decisiones de implementación.
+Todo el código del proyecto fue escrito, revisado y depurado directamente por los integrantes del equipo (nosotros), aplicando los conceptos consultados.
